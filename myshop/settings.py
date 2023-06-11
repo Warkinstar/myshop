@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from environs import Env
+
+
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +42,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
     # My apps
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
@@ -134,3 +138,16 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 # Sessions
 CART_SESSION_ID = "cart"
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Email SMPT
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Настройки Celery
+# CELERY_BROKER_URL = "amqp://guest:guest@localhost:5672//"
+# CELERY_RESULT_BACKEND = "db+sqlite:///results.sqlite3"
+
+# STRIPE CONFIG KEYS
+STRIPE_PUBLISHABLE_KEY = env.str("STRIPE_PUBLISHABLE_KEY", default="")
+STRIPE_SECRET_KEY = env.str("STRIPE_SECRET_KEY", default="")
+STRIPE_API_VERSION = "2022-08-01"
