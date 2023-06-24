@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 from environs import Env
+from django.utils.translation import gettext_lazy as _
 
 
 env = Env()
@@ -120,8 +121,8 @@ LANGUAGE_CODE = "en"
 
 # Locale translate settings
 LANGUAGES = [
-    ("en", "English"),
-    ("ru", "Russian"),
+    ("en", _("English")),
+    ("ru", _("Russian")),
 ]
 
 LOCAL_PATHS = [
