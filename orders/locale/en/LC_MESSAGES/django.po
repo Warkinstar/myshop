@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-23 23:56+0600\n"
+"POT-Creation-Date: 2023-06-25 15:09+0600\n"
 "PO-Revision-Date: 2023-06-24 00:03+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,8 +23,10 @@ msgid "first_name"
 msgstr "first name"
 
 #: .\orders\models.py:12
-msgid "last_name"
-msgstr ""
+#, fuzzy
+#| msgid "first_name"
+msgid "last name"
+msgstr "first name"
 
 #: .\orders\models.py:13
 msgid "e-mail"
@@ -35,9 +37,83 @@ msgid "address"
 msgstr ""
 
 #: .\orders\models.py:15
-msgid "postal_code"
+msgid "postal code"
 msgstr ""
 
 #: .\orders\models.py:16
 msgid "city"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:5
+#: .\orders\templates\orders\order\create.html:10
+msgid "Checkout"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:12
+msgid "Your order"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:22
+#, python-format
+msgid ""
+"\n"
+"                        \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:29
+#: .\orders\templates\orders\order\pdf.html:58
+msgid "Total"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:33
+msgid "Place order"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:4
+msgid "My shop"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:11
+msgid "Bill to"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:18
+msgid "Items bought"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:22
+msgid "Product"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:23
+msgid "Price"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:24
+msgid "Quantity"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:25
+msgid "Cost"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:40
+msgid "Subtotal"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:47
+#, python-format
+msgid ""
+"\n"
+"                \"%(code)s\" (%(discount)s%% off)\n"
+"              "
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:65
+msgid "Paid"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:65
+msgid "Pending payment"
 msgstr ""
