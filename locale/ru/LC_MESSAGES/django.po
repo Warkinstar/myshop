@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-25 14:54+0600\n"
-"PO-Revision-Date: 2023-06-25 16:01+0000\n"
+"POT-Creation-Date: 2023-06-25 23:29+0600\n"
+"PO-Revision-Date: 2023-06-25 23:29+0000\n"
 "Last-Translator:   <admin@email.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -64,11 +64,11 @@ msgstr "Промежуточная сумма"
 #, python-format
 msgid ""
 "\n"
-"                \"%(cart)s\" coupon (%(discount)s%% off)\n"
+"                \"%(code)s\" coupon (%(discount)s%% off)\n"
 "              "
 msgstr ""
 "\n"
-"\"%(cart)s\" купон (%(discount)s%% скидка)\n"
+"\"%(code)s\" купон (%(discount)s%% скидка)\n"
 "              "
 
 #: .\cart\templates\cart\detail.html:69
@@ -102,11 +102,11 @@ msgstr "Оформление заказа"
 msgid "Coupon"
 msgstr "Купон"
 
-#: .\myshop\settings.py:124
+#: .\myshop\settings.py:127
 msgid "English"
 msgstr "Английский"
 
-#: .\myshop\settings.py:125
+#: .\myshop\settings.py:128
 msgid "Russian"
 msgstr "Русский"
 
