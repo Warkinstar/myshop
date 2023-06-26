@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-25 23:29+0600\n"
-"PO-Revision-Date: 2023-06-25 23:29+0000\n"
+"POT-Creation-Date: 2023-06-26 00:18+0600\n"
+"PO-Revision-Date: 2023-06-26 15:52+0000\n"
 "Last-Translator:   <admin@email.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -110,6 +110,23 @@ msgstr "Английский"
 msgid "Russian"
 msgstr "Русский"
 
+#: .\myshop\urls.py:27
+msgid "cart/"
+msgstr "корзина/"
+
+#: .\myshop\urls.py:28
+msgid "orders/"
+msgstr "заказы/"
+
+#: .\myshop\urls.py:29
+msgid "payment/"
+msgstr "оплата/"
+
+#: .\myshop\urls.py:30
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "купоны/"
+
 #: .\payment\templates\payment\canceled.html:6
 msgid "Your payment has not been processed"
 msgstr "Ваша оплата не была завершена"
@@ -152,6 +169,18 @@ msgstr ""
 #: .\payment\templates\payment\process.html:58
 msgid "Pay now"
 msgstr "Оплатить сейчас"
+
+#: .\payment\urls.py:10
+msgid "process/"
+msgstr "процесс/"
+
+#: .\payment\urls.py:11
+msgid "completed/"
+msgstr "завершено/"
+
+#: .\payment\urls.py:12
+msgid "canceled/"
+msgstr "отклонено/"
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:13
 msgid "My shop"
