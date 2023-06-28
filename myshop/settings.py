@@ -134,6 +134,8 @@ LOCALE_PATHS = [
 
 TIME_ZONE = "UTC"
 
+L10N = True
+
 USE_I18N = True
 
 USE_TZ = True

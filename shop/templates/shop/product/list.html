@@ -1,5 +1,6 @@
 {% extends "shop/base.html" %}
 {% load i18n %}
+{% load l10n %}
 {% load static %}
 
 {% block title %}
@@ -30,7 +31,9 @@
                 </a>
                 <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                 <br>
-                ${{ product.price }}
+{#                {% localiz on/off %}#}
+                ${{ product.price|unlocalize }}  {#  value|un/localize #}
+{#                {% endlocalize %}#}
             </div>
         {% endfor %}
     </div>
