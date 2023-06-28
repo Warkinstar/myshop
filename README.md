@@ -4,7 +4,7 @@ Django Shop Project
 Установка и настройка
 Клонируйте репозиторий с помощью команды:
 
-git clone https://github.com/your-username/django-shop.git
+'git clone https://github.com/your-username/django-shop.git'
 
 Перейдите в каталог проекта:
 
