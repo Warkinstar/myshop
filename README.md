@@ -10,9 +10,18 @@ Django Shop Project
 
 ```cd shop```
 
+Создайте виртуальную среду и активируйте её:
+
+```
+python -m venv .venv
+.venv/scripts/activate
+```
+
 Установите зависимости, указанные в файле requirements.txt:
 
 ```pip install -r requirements.txt```
+
+Установить зависимости для WeasyPrint для вашей операционной системы https://doc.courtbouillon.org/weasyprint/stable/first_steps.html. Это необходимо для генерации pdf чеков, которые генерируются из html шаблона.
 
 Примените миграции базы данных:
 
