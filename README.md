@@ -9,6 +9,7 @@ Django Shop Project
 Перейдите в каталог проекта:
 
 ```cd shop```
+
 Установите зависимости, указанные в файле requirements.txt:
 
 ```pip install -r requirements.txt```
@@ -21,6 +22,26 @@ Django Shop Project
 
 ```python manage.py createsuperuser```
 
+Для функционала оплаты проведите ключи платежной системы Stripe. Создайте файл .env и добавьте
+```env
+STRIPE_PUBLISHABLE_KEY = "pk_test_your_key"
+STRIPE_SECRET_KEY = "sk_test_your_key"
+STRIPE_WEBHOOK_SECRET = "whsec_yourWebhookKey"
+``` 
+Так же необходимо запустить в контейнере Docker rabbitmq и redis:
+
+```cmd
+docker pull rabbitmq
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+
+docker pull redis
+docker run -it --rm --name redis -p 6379:6379 redis
+```
+
+Запустите celery worker
+```cmd
+celery -A myshop worker -l info
+```
 
 Запустите сервер разработки:
 
@@ -31,10 +52,12 @@ Django Shop Project
 Функциональность
 Проект магазина включает в себя следующие функции:
 
-Регистрация и аутентификация пользователей.
 Просмотр списка категорий и продуктов.
+Добаваление товаров в корзину.
 Добавление продуктов в корзину.
 Оформление заказов.
+Оплата через сервис Stripe.
+Интернационализация ru-en.
 Административный интерфейс для управления продуктами, категориями и заказами.
 Дополнительные настройки
 В файле settings.py вы можете настроить дополнительные параметры проекта, такие как база данных, статические файлы, международные настройки и другие.
