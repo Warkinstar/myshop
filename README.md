@@ -1,30 +1,30 @@
 Django Shop Project
-Это проект магазина, основанный на книге "Django by Example". Он представляет собой пример реализации функционала интернет-магазина с использованием Django.
+Это pet проект магазина. Он представляет собой пример реализации функционала интернет-магазина с использованием Django.
 
 Установка и настройка
 Клонируйте репозиторий с помощью команды:
 
-'git clone https://github.com/your-username/django-shop.git'
+```git clone https://github.com/warkinstar/shop.git```
 
 Перейдите в каталог проекта:
 
-cd shop
+```cd shop```
 Установите зависимости, указанные в файле requirements.txt:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 Примените миграции базы данных:
 
-python manage.py migrate
+```python manage.py migrate```
 
 Создайте суперпользователя:
 
-python manage.py createsuperuser
+```python manage.py createsuperuser```
 
 
 Запустите сервер разработки:
 
-python manage.py runserver
+```python manage.py runserver```
 
 Теперь вы можете открыть приложение в браузере по адресу http://localhost:8000.
 
