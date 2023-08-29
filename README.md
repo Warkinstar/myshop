@@ -52,6 +52,16 @@ docker run -it --rm --name redis -p 6379:6379 redis
 celery -A myshop worker -l info
 ```
 
+Если worker не выполняет задачи запуск воркера через gevent:
+
+```celery -A myshop worker -l info -P gevent```
+
+Мониторинг Celery при помощи Flower:
+```celery -A myshop flower```
+
+Запуск прослушки события оплаты вебхуков для тестирования уведомлений:
+```stripe listen --forward-to localhost:8000/payment/webhook/```
+
 Запустите сервер разработки:
 
 ```python manage.py runserver```
